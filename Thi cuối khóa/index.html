@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .text {
+        color: red;
+      }
+      #textId {
+        color: blue;
+      }
+      #section {
+        padding: 20px;
+        border: 10px solid black;
+        margin: 20px;
+        width: 100px;
+      }
+
+      #sectionGrid {
+        display: grid;
+        grid-template-areas: 1fr 2fr 1fr / 1fr 1fr;
+
+        column-gap: 30px;
+      }
+
+      #box1 {
+        background-color: red;
+        grid-area: 1 / -1;
+        height: 400px;
+      }
+      #box2 {
+        background-color: green;
+        grid-area: 1 / 1;
+        height: 400px;
+      }
+      #box3 {
+        background-color: blue;
+        grid-area: 1 / 2;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://png.pngtree.com/background/20230410/original/pngtree-mountains-moon-nature-landscape-cartoon-background-decoration-pattern-picture-image_2385439.jpg"
+      alt="Hình phong cảnh"
+    />
+
+    <p class="text" id="textId">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, est ex
+      possimus suscipit magnam doloremque fugiat. Incidunt nihil soluta,
+      reprehenderit consequuntur nam totam possimus nobis provident, pariatur
+      itaque, quasi ut!
+    </p>
+
+    <a href="https://www.google.com.vn/" target="_blank"> Link Goole</a>
+
+    <section id="section">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum maiores
+      quisquam ab laboriosam, rem, possimus molestiae necessitatibus aliquam,
+      ullam soluta porro. Corporis veritatis accusantium doloribus quaerat.
+      Harum ex praesentium voluptates?
+    </section>
+
+    <section id="sectionGrid">
+      <div id="box1"></div>
+      <div id="box2"></div>
+      <div id="box3"></div>
+    </section>
+
+    <section id="bootstrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12"></div>
+          <div class="col-lg-3 col-md-6 col-12"></div>
+          <div class="col-lg-3 col-md-6 col-12"></div>
+          <div class="col-lg-3 col-md-6 col-12"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
